@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --text-color: #ffffff;
+  --body-bg: #e5e5e5;
+  --bg-color: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  --impact-ff: "Impacted", sans-serif;
+  --archivo-Black: "Archivo Black", sans-serif;
+  --Karla-ff: "Karla", sans-serif;
+  --arial-ff: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--Karla-ff);
+  font: 400 16px/24px var(--Karla-ff);
+}
+
+body {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  background: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+P,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+
+.img-fit {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 3px !important;
+}
+
+.c-d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.c-btn:hover {
+  color: #ffffff;
+}
+
+.d-center {
+  justify-content: center;
+}
+
+.d-between {
+  justify-content: space-between;
+}
+
+/* general css about */
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-brand {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  padding: 0.5em;
+}
+
+.header--icon-container {
+  width: 50px;
+}
+
+.header--logo h5 {
+  font: 700 21px/25px var(--Karla-ff);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1em 0;
+}
+.form-label {
+  font: 500 14px/17px var(--Karla-ff);
+  color: #374151;
+}
+
+.form-control:focus {
+  color: #6b7280;
+}
+
+.context {
+  position: relative;
+}
+
+.context p {
+  text-align: center;
+  color: var(--text-color);
+  font: 900 32px/30px var(--archivo-Black);
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #000000;
+  padding: 12px;
+}
+
+.top-text {
+  top: 2px;
+}
+
+.bottom-text {
+  bottom: 2px;
+}
+
+@media (min-width: 500px) {
+  .main-container {
+    width: 600px;
+  }
+}
